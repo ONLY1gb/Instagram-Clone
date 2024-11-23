@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+/* Ensure the navbar stays fixed at the top */
+.navbar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Spans the full width */
+  z-index: 1000; /* Ensures it stays above all other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+  background-color: #f8f9fa; /* Matches the default Bootstrap light background */
+
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Navbar brand style */
+.navbar-brand {
+  color: #262626;
+  font-family: 'Instagram Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+/* Customize navbar links */
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* Default size for desktop */
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+}
+
+/* Ensure navbar stays fixed on all screen sizes */
+.navbar-custom {
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar icon size */
+.navbar-nav .nav-link .icon {
+  font-size: 2.3rem;
+  color: #262626;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link .icon:hover {
+  color: #3897f0; /* Add hover effect */
+}
+
+/* Responsive adjustments for medium and small screens */
+@media (max-width: 991px) {
+  .navbar-custom .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-custom .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-custom .navbar-toggler {
+    font-size: 1.3rem; /* Increase the size of the hamburger button on smaller screens */
+  }
+
+  .navbar-custom .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 1.2rem; /* Make icons smaller */
+    padding: 0.5rem;
+  }
+
+  .navbar-custom .navbar-toggler {
+    border-color: #ddd; /* Make the hamburger button border color subtle */
+  }
+}

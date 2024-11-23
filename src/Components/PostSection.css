@@ -1,0 +1,83 @@
+/* Main container for the post section */
+.post-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  /* Individual post container */
+  .post {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Post header styling */
+  .post-header {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  /* Username styling */
+  .post-username {
+    margin: 0;
+    color: #262626;
+  }
+  
+  /* Post image styling */
+  .post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Post actions (icons) */
+  .post-actions {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #262626;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #ff4500;
+  }
+  
+  /* Post info (likes and caption) */
+  .post-info {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #262626;
+  }
+  
+  .post-comments {
+    color: #8e8e8e;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .post-section {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .post-info {
+      font-size: 0.8rem;
+    }
+  }
+  

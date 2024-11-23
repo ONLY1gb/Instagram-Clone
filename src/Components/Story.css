@@ -1,0 +1,72 @@
+/* StorySection.css */
+
+/* Main story section container */
+.story-section {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  /* Story container to hold all stories */
+  .story-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Horizontal scrolling */
+    padding: 10px 0;
+    max-width: 500px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ccc transparent; /* For Firefox */
+    
+  }
+  
+  /* Custom scrollbar for Chrome, Edge, and Safari */
+  .story-container::-webkit-scrollbar {
+    height: 8px;
+      
+  }
+  
+  .story-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+  
+  .story-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Individual story box */
+  .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70px; /* Set width for consistency */
+  }
+  
+  /* Story image styling */
+  .story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Circular shape */
+    border: 2px solid #ff8501; /* Instagram-like gradient border */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .story img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  /* Username styling */
+  .story p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #262626;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70px;
+  }
+  

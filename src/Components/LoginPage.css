@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-content {
+  max-width: 500px; /* Set the maximum width of the modal */
+  margin: 50px auto; /* Center the modal */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  background-color: #ffffff; /* Background color of the modal */
+}
+
+.modal-header {
+  text-align: center; /* Center the header text */
+  background-color: #fafafa; /* Header background color */
+  padding: 20px; /* Padding inside header */
+  border-bottom: 1px solid #e6e6e6; /* Bottom border for separation */
+}
+
+.modal-header .heading {
+  color: #262626; /* Heading text color */
+  font-family: 'Instagram Sans', sans-serif; /* Custom font */
+}
+
+.modal-body {
+  padding: 30px; /* Padding inside the modal body */
+}
+
+.form-floating {
+  position: relative; /* Positioning for floating labels */
+  margin-bottom: 1.5rem; /* Space between input fields */
+}
+
+.form-control {
+  width: 100%; /* Full width of the input */
+  padding: 12px 15px; /* Padding inside the input */
+  font-size: 16px; /* Font size of the input text */
+  line-height: 1.5; /* Line height for better readability */
+  border: 1px solid #dbdbdb; /* Border style */
+  border-radius: 5px; /* Rounded corners for input */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
+
+.form-floating label {
+  color: #8e8e8e; /* Label color */
+  font-size: 1rem; /* Font size of the label */
+}
+
+.btn {
+  padding: 12px; /* Padding for buttons */
+}
+
+.btn-primary {
+  background-color: #3897f0; /* Primary button color */
+  border: none; /* No border */
+  font-weight: bold; /* Bold text */
+}
+
+.btn-primary:hover {
+  background-color: #2878cc; /* Darker shade on hover */
+}
+
+.text-body-secondary {
+  font-size: 16px; /* Font size for secondary text */
+  color: #8e8e8e; /* Color for secondary text */
+  padding: 35px;
+}
+
+hr {
+  border-top: 1px solid #dbdbdb; /* Style for horizontal rule */
+}
+
+.fs-5 {
+  color: #262626; /* Color for headings */
+}
+
+.btn-outline-secondary {
+  border: 1px solid #dbdbdb; /* Outline button border */
+  color: #333; /* Text color */
+  background-color: #fafafa; /* Background color */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #eaeaea; /* Background color on hover */
+}
+
+.btn-outline-primary {
+  border: 1px solid #3897f0; /* Border for outline button */
+  color: #3897f0; /* Text color */
+  background-color: transparent; /* Transparent background */
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(56, 151, 240, 0.1); /* Background color on hover */
+}
+
+svg {
+  vertical-align: middle; /* Align SVG icon with text */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .modal-content {
+      max-width: 95%; /* Shrink modal width */
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  .modal-body {
+      padding: 20px; /* Reduce padding */
+  }
+
+  .form-control {
+      font-size: 14px; /* Reduce input font size */
+      padding: 10px;
+  }
+
+  .btn {
+      padding: 10px; /* Adjust button padding */
+      font-size: 14px; /* Reduce button font size */
+  }
+
+  .text-body-secondary {
+      font-size: 14px; /* Reduce secondary text font size */
+      padding: 20px;
+  }
+
+  .fs-5 {
+      font-size: 1rem; /* Adjust heading size */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modal-content {
+      max-width: 90%; /* Adjust modal width for smaller screens */
+      margin: 20px auto;
+  }
+
+  .modal-header {
+      padding: 15px; /* Reduce padding */
+  }
+
+  .modal-body {
+      padding: 15px; /* Reduce padding */
+  }
+
+  .form-control {
+      font-size: 12px; /* Smaller input font size */
+      padding: 8px;
+  }
+
+  .btn {
+      font-size: 12px; /* Smaller button text */
+      padding: 8px;
+  }
+
+  .text-body-secondary {
+      font-size: 12px; /* Smaller font for secondary text */
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-content {
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .form-control {
+      padding: 6px; /* Compact input padding */
+  }
+
+  .btn {
+      padding: 6px; /* Compact button padding */
+  }
+
+  .text-body-secondary {
+      padding: 10px; /* Reduce padding */
+  }
+}
+
+.link {
+  text-decoration: none;
+}
