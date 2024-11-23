@@ -3,7 +3,7 @@ import './PostSection.css';
 import { FaHeart, FaComment, FaPaperPlane } from 'react-icons/fa';
 import Gautam from "../assets/Gautam_images.jpg";
 import kalpesh from "../assets/Kalpesh1.jpg";
-import Jiks from "../assets/Jiks.jpg";
+
 import Jack_Sapprow from "../assets/Jack_Sapprow.jpg";
 import Abhishek from "../assets/Abhishek.jpg";
 import Nikhil from "../assets/Nikhil.jpg";
@@ -20,14 +20,7 @@ const PostSection = () => {
       likes: 120,
       comments: 45,
     },
-    {
-      id: 2,
-      username: 'jiks_21',
-      image: Jiks,
-      caption: 'Nature is amazing!',
-      likes: 200,
-      comments: 70,
-    },
+    
     {
       id: 3,
       username: 'kalpesh',
